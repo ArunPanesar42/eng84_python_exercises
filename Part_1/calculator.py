@@ -18,15 +18,15 @@ def divide(x, y):
 
 
 def area_of_circle(radius):
-    return 3.1415*radius*radius
+    return 3.1415 * radius * radius
 
 
 def area_of_square(side):
-    return side*side
+    return side * side
 
 
 def area_of_triangle(base, height):
-    return height*base/2
+    return height * base / 2
 
 
 def ask_choice(max_num):
@@ -82,34 +82,34 @@ def calculator():
     while True:
         menu()
         choice = ask_choice(8)
-        # Adddition
+        # Addition
         if choice == 0:
             print('First number?')
             x = ask_number()
             print('Second number?')
             y = ask_number()
-            print(f'Result: {add(x,y)}')
+            print(f'Result: {add(x, y)}')
         # Subtraction
         elif choice == 1:
             print('First number?')
             x = ask_number()
             print('Second number?')
             y = ask_number()
-            print(f'Result: {subtract(x,y)}')
+            print(f'Result: {subtract(x, y)}')
         # Multiplication
         elif choice == 2:
             print('First number?')
             x = ask_number()
             print('Second number?')
             y = ask_number()
-            print(f'Result: {multiply(x,y)}')
+            print(f'Result: {multiply(x, y)}')
         # Division
         elif choice == 3:
             print('First number?')
             x = ask_number()
             print('Second number?')
             y = ask_nonzero()
-            print(f'Result: {divide(x,y)}')
+            print(f'Result: {divide(x, y)}')
         # Area of a circle
         elif choice == 4:
             print('Radius?')
@@ -126,7 +126,7 @@ def calculator():
             x = ask_positive_number()
             print('Base?')
             y = ask_positive_number()
-            print(f'Result: {area_of_triangle(x,y)}')
+            print(f'Result: {area_of_triangle(x, y)}')
         # Exit
         elif choice == 7:
             print('Goodbye')
